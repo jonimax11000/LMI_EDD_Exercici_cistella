@@ -30,7 +30,7 @@ class Cistella{
         taula.insertAdjacentHTML('beforeend',"<caption>--- Contingut de la Cistella ---</caption>")
         let fila = document.createElement("tr");
         fila.insertAdjacentHTML('beforeend',"<th>identificador</th>");
-        fila.insertAdjacentHTML('beforeend',"<th>Producte - Preu</th>");
+        fila.insertAdjacentHTML('beforeend',"<th>Producte - Preu/unitat</th>");
         fila.insertAdjacentHTML('beforeend',"<th>Quantitat</th>");
         fila.insertAdjacentHTML('beforeend',"<th>Subtotal</th>");
         taula.appendChild(fila);
@@ -47,7 +47,8 @@ class Cistella{
             i++;
         }
         fila = document.createElement("tr");
-        fila.insertAdjacentHTML("beforeend","<td colspan='4'>Preu total: "+total.toFixed(2)+" €</td>");
+        fila.insertAdjacentHTML("beforeend","<td colspan='3'>Preu total: </td>");
+        fila.insertAdjacentHTML("beforeend","<td>"+total.toFixed(2)+" €</td>");
         taula.appendChild(fila);
         respuesta.appendChild(taula);
     }

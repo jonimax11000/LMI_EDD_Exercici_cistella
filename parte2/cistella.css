@@ -1,0 +1,43 @@
+body{
+    background-color: cadetblue;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    background-color: aqua;
+}
+#form{
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#respuesta{
+    display: flex;
+    justify-content: center;
+}
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+table {
+    margin: auto; width: 50%;
+}
+
+th {
+    background-color: #ffffa0; height: 40px; vertical-align: bottom;
+}
+
+td {
+
+    height: 20px; text-align: right; padding: 5px;background-color: whitesmoke;
+}
+
+caption{
+    font-size: 24px;
+    font-weight: bold;
+}

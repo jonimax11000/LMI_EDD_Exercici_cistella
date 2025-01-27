@@ -7,11 +7,9 @@ h1{
     padding: 10px;
     background-color: aqua;
 }
-#form{
+#formulari{
     margin: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-bottom: 22px;
     align-items: center;
 }
 

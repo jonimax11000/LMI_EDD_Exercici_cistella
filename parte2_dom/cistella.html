@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cistella de Nadal</title>
+    <link rel="stylesheet" href="cistella.css">
+</head>
+<body>
+    <h1>🎄 Cistella de Nadal 🎄</h1>
+    <form id="formulari">
+        <label for="desc">Descripció del producte:</label>
+        <input type="text" id="desc" required>
+        <label for="preu">Preu (€):</label>
+        <input type="number" id="preu" step="0.01" required>
+        <label for="quantitat">Quantitat:</label>
+        <input type="number" id="quantitat" required>
+        <button type="button" id="afegir">Afig producte</button>
+    </form>
+    <table id="taula">
+        <thead>
+            <tr>
+                <th>Nom del producte</th>
+                <th>Preu unitari (€)</th>
+                <th>Quantitat</th>
+                <th>Subtotal (€)</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpo">
+            <!-- Les files es generaran dinàmicament -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><strong>Total:</strong></td>
+                <td id="total">0.00 €</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+<script src="cistella.js"></script>
+</html>

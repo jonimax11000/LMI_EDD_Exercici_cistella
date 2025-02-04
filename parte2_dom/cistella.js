@@ -22,13 +22,12 @@ class Cistella{
         let preuTotal = 0;
         let tbody = document.querySelector("#cuerpo");
         let total = document.getElementById("total");
-        let fila = document.createElement("tr");
         tbody.innerHTML="";
         
         for(let producte of this.productes){
             let subtotal = producte.producte.preu * producte.quantitat;
             preuTotal += subtotal;
-            fila = document.createElement("tr");
+            let fila = document.createElement("tr");
             fila.insertAdjacentHTML('beforeend',"<td>"+producte.producte.nom+"</td>");
             fila.insertAdjacentHTML('beforeend',"<td>"+producte.producte.preu.toFixed(2)+" €</td>");
             fila.insertAdjacentHTML('beforeend',"<td>"+producte.quantitat+"</td>");
